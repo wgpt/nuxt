@@ -8,10 +8,20 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint": "yarn lint:js",
     "server-pro": "nuxt build",
     "postserver-pro": "pm2 start process/pro.json",
-    "server-dev": "node ./server.js"
+    "server-dev": "node ./server.js",
+    "lint": "eslint  --fix"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "dependencies": {
     "@koa/router": "^10.0.0",
@@ -20,7 +30,8 @@
     "koa": "^2.13.1",
     "nuxt": "^2.15.3",
     "pm2": "^4.5.6",
-    "vant": "^2.12.10"
+    "vant": "^2.12.10",
+    "lodash": "^4.17.20"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^6.0.0",
@@ -31,6 +42,10 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.7.0",
-    "prettier": "^2.2.1"
+    "husky": "4.3.6",
+    "lint-staged": "10.5.3",
+    "prettier": "^2.2.1",
+    "stylus": "^0.54.8",
+    "stylus-loader": "^4.3.3"
   }
 }

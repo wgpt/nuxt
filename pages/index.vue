@@ -1,45 +1,17 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">Welcome to the Vant + Nuxt.js templatedafsdfdfasdf</h1>
-      <div class="links">
-        <van-button
-          type="primary"
-          target="_blank"
-          rel="noopener noreferrer"
-          to="https://nuxtjs.org/"
-        >
-          Documentation
-        </van-button>
-        <van-button
-          target="_blank"
-          rel="noopener noreferrer"
-          to="https://github.com/nuxt/nuxt.js"
-        >
-          GitHub
-        </van-button>
-        <van-button
-          target="_blank"
-          rel="noopener noreferrer"
-          to="https://www.iviewui.com/"
-          >d View UIadf
-        </van-button>
-      </div>
-    </div>
-  </div>
+  <div class="container">yo~~~</div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 export default {
-  components: {
-    Logo,
+  components: {},
+  mounted() {
+    console.log(this._)
   },
 }
 </script>
 
-<style>
+<style scoped lang="stylus">
 .container {
   margin: 0 auto;
   min-height: 100vh;

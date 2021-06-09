@@ -2,7 +2,7 @@
 module.exports = {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'office',
+    title: '骆驼品牌官网',
     htmlAttrs: {
       lang: 'en',
     },
@@ -18,7 +18,7 @@ module.exports = {
   css: ['vant/lib/index.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['@/plugins/vant'],
+  plugins: ['@/plugins/vant', '@/plugins/lodash'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
