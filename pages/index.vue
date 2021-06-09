@@ -6,7 +6,6 @@
 export default {
   components: {},
   mounted() {
-    console.log(this._)
   },
 }
 </script>
@@ -14,7 +13,6 @@ export default {
 <style scoped lang="stylus">
 .container {
   margin: 0 auto;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
